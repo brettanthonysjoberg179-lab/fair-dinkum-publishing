@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair Dinkum Publishing | Aussie Agent Workflowz</title>
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --surface: #161618;
+            --surface-light: #232326;
+            --text: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.3);
+            --border: #27272a;
+            --radius: 8px;
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.025em;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo span { color: var(--accent); }
+
+        /* Hero Section - Decide/Learn Surface */
+        .hero {
+            padding: 8rem 0 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to bottom, #fff 40%, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        /* Ecosystem Section */
+        .ecosystem {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+            background: var(--surface-light);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-glow);
+            color: var(--accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .card-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.125rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">FAIR<span>DINKUM</span></a>
+            <a href="https://github.com/brettanthonysjoberg179" class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;">GitHub</a>
+        </nav>
+
+        <section class="hero">
+            <h1>Agentic Digital Products.<br>Built for Results.</h1>
+            <p>We build autonomous AI workforces that don't just assist—they execute. From niche research to full-scale publishing pipelines.</p>
+            <a href="#ecosystem" class="btn">Explore the Ecosystem</a>
+        </section>
+
+        <section id="ecosystem" class="ecosystem">
+            <div class="section-title">
+                <h2>The Engine, The Factory, The Delivery</h2>
+                <p>A vertically integrated stack for the agentic era.</p>
+            </div>
+
+            <div class="grid">
+                <!-- The Engine -->
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Agent Workforce</h3>
+                    <p>A production-ready deployment of 15 specialized agents orchestrated via FastAPI MCP, automating the entire content lifecycle with precision QA.</p>
+                    <a href="#" class="card-link">Learn about the Architecture &rarr;</a>
+                </div>
+
+                <!-- The Factory -->
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>AgentForge</h3>
+                    <p>The AI-IDE for producing Agent Workflows. Integrating Ollama and Notion to transform complex business logic into executable agent chains.</p>
+                    <a href="#" class="card-link">View the Roadmap &rarr;</a>
+                </div>
+
+                <!-- The Delivery -->
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Ebook Hub</h3>
+                    <p>A high-fidelity delivery platform featuring a flipbook reader, digital marketplace, and integrated Stripe payments for agent-produced assets.</p>
+                    <a href="https://brettanthonysjoberg179-lab.github.io/ebook-hub-site/" class="card-link">Visit the Hub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 FAIR DINKUM PUBLISHING / AUSSIE AGENT WORKFLOWZ. Built in Public.</p>
+        </footer>
+    </div>
+</body>
+</html>
